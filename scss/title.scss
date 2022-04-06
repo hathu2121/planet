@@ -1,0 +1,62 @@
+.title {
+    position: fixed;
+    top: 200px;
+    left: 0px;
+    right: 100px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-text {
+            width: 800px;
+            height: 500px;
+
+            h4 {
+                font-weight: bold;
+                color: $text-color;
+                font-size: 34px;
+                margin: 10 0 0 0;
+            }
+
+            h1 {
+                font-weight: bold;
+                color: $text-color;
+                font-size: 160px;
+                margin: 0 0 0 0;
+            }
+
+            p {
+                font-weight: bold;
+                color: $text-color;
+                font-size: 20px;
+            }
+        }
+
+        &-button {
+            button {
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                border: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 50px;
+                }
+            }
+            &:hover {
+                transition: all 0.1 ease-in-out;
+                background-color: $button-color-hover;
+                border-radius: 50%;
+                color: $button-color;
+
+                a {
+                    color: $button-color;
+                }
+            }
+        }
+    }
+}
