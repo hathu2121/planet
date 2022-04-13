@@ -1,0 +1,51 @@
+# Biến "variable"
+    *Có hai loại biến chính
+        1:Biến tham trị : 
+            Giá trị - lưu luôn cả giá trị; vd a=5 x=10
+                + chia ra làm các kiểu dữ liệu:
+                    - Kiểu 1: (Kiểu chữ-kí tự) vd: "String"
+                    - Kiểu 2: (Kiểu số) vd: a=5 (integer:int:số nguyên) + float : (só thực) vd : a=0.25 (float)
+                    - Kiểu 3: (Kiểu logic) (boolean)
+                            +) chỉ có hai giá trị : true - false
+                    - Kiểu 4: null , undefined , NaN (Khi giá trị không xác định sẽ xuất hiện)
+        2:Biến tham chiếu :
+                Có hai loại chính:
+                    - Object (Đối tượng) : {key:value,key2:value2}
+                           +) value: +có thế là 4 loại giá trị ở biến tham trị.
+                    - Array (Mảng) : [value,value1,value2,value3]
+    *TỪ KHÓA ( var,let,const )+ TÊN BIẾN ( camelCase ) + = + GIÁ TRỊ 
+
+* Java script: Các phép toán 
+            1> Phép toán đại số : Thực hiện trên kiểu dữ liệu số và có những kiểu dữ liệu số như trên (Kiểu 2- tham trị) giá trị trả về là kiểu dữ liệu số tuiowng ứng.
+            2> Phép toán logic : Chia ra làm những loại sau (chỉ trả về hai loại giá trị là true - false)
+                                    +) Not : Phủ định ( kí hiệu: ! ) vd: a = true => !a = false
+                                    +) So sánh : Có các kiểu là :   dấu lớn hơn (>)
+                                                                    dấu bé hơn (<)
+                                                                    dấu lớn hơn hoặc bằng (>=)
+                                                                    dấu bé hơn hoặc bằng (<=)
+                                                                    dấu so sánh bằng (== ; bằng nhưng chỉ so sánh giá trị nhưng không so sánh kiểu dữ liệu)
+                                                                                     (=== ; phải giống nhau cả giá trị và kiểu dữ liệu, thường được sự dụng nhiều hơn)(phủ định của === là !== hay còn đọc là khác bằng bằng)
+                                                                    1) so sánh và : (and ; kh : && ) a&&b = true khi cả a và b đều true. Tất cả các trường hợp còn lại đều trả về false.
+                                                                    2) so sánh hoặc : (or ; kh : || ) a||b = true khi chỉ cần 1 trong 2 true. chỉ trong trường hợp a và b cùng là false thì mới trả về false.
+
+*fuction < hàm >
+    1) Hàm có hai loại:
+        - Hàm tự có (có sẵn - built in ):
+        -Hàm tự định nghĩa ( tự viết ) :
+            +) Tính chất của hàm:   - Hàm không được thực hiện khi mình khởi tạo ra nó.
+                                    - Hàm là kiểu dữ liệu tham chiếu.
+                                    - Hàm có thể nhận được tham số ( param <-> params )
+                                    - Luôn luôn trả về ( return ) giá trị 
+            +) Các kiểu khai báo hàm:
+                                    1) fuction + tên hàm( tham số 1, tham số 2,..., tham số n){
+                                        công việc của Hàm;
+                                        return giá trị;
+                                    }
+                                    2) arrow fuction(es6)
+                                      - const/let + tên hàm = (tham soos1, tham số 2,..., tham số n)=>{
+                                            công việc của hàm;
+                                            return giá trị;
+                                        }
+                                     - const/let + tên hàm = (tham soos1, tham số 2,..., tham số n)=> phép tính
+            +) Chạy hàm :
+                                    tên hàm(tham số);

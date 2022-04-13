@@ -1,0 +1,85 @@
+.content {
+    position: fixed;
+    top: 200px;
+    left: 100px;
+    right: 100px;
+
+    &__infocrew {
+        display: flex;
+        justify-content: space-around;
+
+        &__title {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            #number__title {
+                padding-top: 10px;
+                padding-bottom: 80px;
+
+                #number {
+                    margin-left: 0px;
+                    margin-right: 20px;
+                    color: $button-color;
+                    font-size: 23px;
+                }
+
+                #number_td {
+                    color: $text-color;
+                    font-size: 23px;
+                }
+            }
+
+            #title_h {
+                #title_h1 {
+                    color: $text-color;
+                    font-weight: 5;
+                    font-size: 32px;
+                }
+
+                #title_h2 {
+                    color: $text-color;
+                    font-weight: 900;
+                    font-size: 45px;
+                }
+
+                #title_p {
+                    color: $text-color;
+
+                }
+
+                #title_list {
+                    display: flex;
+                    flex-direction: row;
+
+                    #title_listt1 {
+                        border: 1px solid $button-color;
+                        background-color: $button-color;
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        margin-left: 25px;
+
+                        &:hover {
+                            transition: all 0.1 ease-in-out;
+                            background-color: $text-color;
+                            border-radius: 50%;
+                            color: $button-color;
+
+                            #title_listt1 {
+                                color: $button-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__crew {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+}

@@ -41,12 +41,23 @@
                 border-radius: 50%;
                 border: none;
 
+                &:hover {
+                    transition: all 0.1 ease-in-out;
+                    background-color: $button-color-hover;
+                    border-radius: 50%;
+
+                    a {
+                        color: $text-color;
+                    }
+                }
+
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: #000;
                     font-size: 50px;
                 }
             }
+
             &:hover {
                 transition: all 0.1 ease-in-out;
                 background-color: $button-color-hover;
@@ -54,7 +65,7 @@
                 color: $button-color;
 
                 a {
-                    color: $button-color;
+                    color: #000;
                 }
             }
         }
