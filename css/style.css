@@ -165,16 +165,36 @@ body {
   justify-content: flex-start;
   margin: 0 0;
 }
-.content__contaier__title .list ul {
+.content__contaier__title__list__list1 {
   list-style: none;
   height: 100%;
   display: flex;
-  align-items: center;
-  padding: 0 130px 0 30px;
+  justify-content: flex-start;
+  padding-right: 30px;
   gap: 45px;
   position: relative;
   font-weight: 300;
   color: #F3F4ED;
+}
+.content__contaier__title__list__list1__planet {
+  width: 70px;
+  height: 40px;
+  text-decoration: none;
+  border: 0.5px solid #F3F4ED;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F3F4ED;
+}
+.content__contaier__title__list__list1__planet:hover {
+  transition: all 0.1 ease-in-out;
+  background-color: #F3F4ED;
+  border-radius: 50%;
+  color: #536162;
+}
+.content__contaier__title__list__list1__planet:hover #title_listt1 {
+  color: #536162;
 }
 .content__contaier__title .info__timeNkm {
   display: flex;

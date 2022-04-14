@@ -25,18 +25,38 @@
             flex-direction: column;
             justify-content: flex-start;
             margin: 0 0;
-            .list{
-                ul{
+            &__list{
+                &__list1{
                     list-style: none;
                     height: 100%;
                     display: flex;
-                    align-items: center;
-                    padding: 0 130px 0 30px;
+                    justify-content: flex-start;
+                    padding-right: 30px;
                     gap: 45px;
                     position: relative;
                     font-weight: 300;
                     color: $text-color;
+                    &__planet{
+                        width: 70px;
+                        height: 40px;
+                       text-decoration: none;
+                       border: 0.5px solid $text-color;
+                       border-radius: 50%;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       color: $text-color;
+                       &:hover {
+                        transition: all 0.1 ease-in-out;
+                        background-color: $text-color;
+                        border-radius: 50%;
+                        color: $button-color;
 
+                        #title_listt1 {
+                            color: $button-color;
+                        }
+                    }
+                    }
                 }
             }
             .info{
