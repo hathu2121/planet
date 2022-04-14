@@ -25,6 +25,14 @@
                 color: $text-color;
                 font-size: 160px;
                 margin: 0 0 0 0;
+                &:hover {
+                    transition: all 0.1 ease-in-out;
+                    transform: scale(1.2,1.2);
+                    -moz-transform: scale(1.2,1.2);
+                    -webkit-transform: scale(1.2,1.2);
+                    -o-transform: scale(1.2,1.2);
+                    -ms-transform: scale(1.2,1.2);
+                    }
             }
 
             p {
@@ -40,6 +48,14 @@
                 height: 350px;
                 border-radius: 50%;
                 border: none;
+                &:hover {
+                    transition: all 0.1 ease-in-out;
+                    transform: scale(1.2,1.2);
+                    -moz-transform: scale(1.2,1.2);
+                    -webkit-transform: scale(1.2,1.2);
+                    -o-transform: scale(1.2,1.2);
+                    -ms-transform: scale(1.2,1.2);
+                }
 
                 &:hover {
                     transition: all 0.1 ease-in-out;

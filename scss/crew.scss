@@ -35,16 +35,43 @@
                     color: $text-color;
                     font-weight: 5;
                     font-size: 32px;
+                    border: 1px solid none;
+                    &:hover {
+                        transition: all 0.1 ease-in-out;
+                        transform: scale(1.25,1.25);
+                        -moz-transform: scale(1.25,1.25);
+                        -webkit-transform: scale(1.25,1.25);
+                        -o-transform: scale(1.25,1.25);
+                        -ms-transform: scale(1.25,1.25);
+                        }
                 }
 
                 #title_h2 {
                     color: $text-color;
                     font-weight: 900;
                     font-size: 45px;
+                    border: 1px solid none;
+                    &:hover {
+                        transition: all 0.1 ease-in-out;
+                        transform: scale(1.25,1.25);
+                        -moz-transform: scale(1.25,1.25);
+                        -webkit-transform: scale(1.25,1.25);
+                        -o-transform: scale(1.25,1.25);
+                        -ms-transform: scale(1.25,1.25);
+                        }
                 }
 
                 #title_p {
                     color: $text-color;
+                    border: 1px solid none;
+                    &:hover {
+                        transition: all 0.1 ease-in-out;
+                        transform: scale(1.25,1.25);
+                        -moz-transform: scale(1.25,1.25);
+                        -webkit-transform: scale(1.25,1.25);
+                        -o-transform: scale(1.25,1.25);
+                        -ms-transform: scale(1.25,1.25);
+                        }
 
                 }
 
@@ -80,6 +107,17 @@
             flex-direction: row-reverse;
             align-items: flex-end;
             justify-content: flex-end;
+            img{
+                border: 1px solid none;
+                    &:hover {
+                        transition: all 0.1 ease-in-out;
+                        transform: scale(1.25,1.25);
+                        -moz-transform: scale(1.25,1.25);
+                        -webkit-transform: scale(1.25,1.25);
+                        -o-transform: scale(1.25,1.25);
+                        -ms-transform: scale(1.25,1.25);
+                        }
+            }
         }
     }
 }
