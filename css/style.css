@@ -3,12 +3,6 @@ body {
   margin: 0;
 }
 
-.bg {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -90,6 +84,12 @@ body {
   color: #F3F4ED;
 }
 
+.bg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 #navbutton:hover {
   transition: all 0.1 ease-in-out;
   transform: scale(1.1, 1.1);
@@ -101,10 +101,14 @@ body {
 }
 
 .title {
+  display: flex;
+  flex-wrap: wrap;
   position: fixed;
   top: 200px;
-  left: 0px;
+  left: 100px;
   right: 100px;
+  flex-direction: column;
+  align-items: center;
 }
 .title__content {
   display: flex;
@@ -167,6 +171,15 @@ body {
 }
 .title__content-button button:hover a {
   color: #F3F4ED;
+  font-style: oblique;
+  width: 100%;
+  height: 100%;
+}
+.title__button_section {
+  border: 0.5px solid none;
+}
+.title__button_section ion-icon {
+  color: #F3F4ED;
 }
 
 #navbutton:hover {
@@ -215,6 +228,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   margin: 0 0;
 }
 .content__contaier__title__list__list1 {
@@ -222,7 +236,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-right: 30px;
+  padding-right: 0px;
   gap: 45px;
   position: relative;
   font-weight: 300;
