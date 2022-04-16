@@ -1,14 +1,15 @@
-#navbutton{
+#navbutton {
     &:hover {
         transition: all 0.1 ease-in-out;
-        transform: scale(1.1,1.1);
-        -moz-transform: scale(1.1,1.1);
-        -webkit-transform: scale(1.1,1.1);
-        -o-transform: scale(1.1,1.1);
-        -ms-transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
         color: $text-color;
     }
 }
+
 .title {
     position: fixed;
     top: 200px;
@@ -36,16 +37,17 @@
                 color: $text-color;
                 font-size: 160px;
                 margin: 0 0 0 0;
+
                 &:hover {
                     transition: all 0.1 ease-in-out;
-                    transform: scale(1.2,1.2);
-                    -moz-transform: scale(1.2,1.2);
-                    -webkit-transform: scale(1.2,1.2);
-                    -o-transform: scale(1.2,1.2);
-                    -ms-transform: scale(1.2,1.2);
+                    transform: scale(1.2, 1.2);
+                    -moz-transform: scale(1.2, 1.2);
+                    -webkit-transform: scale(1.2, 1.2);
+                    -o-transform: scale(1.2, 1.2);
+                    -ms-transform: scale(1.2, 1.2);
                     padding-left: 30px;
                     padding-bottom: 15px;
-                    }
+                }
             }
 
             p {
@@ -61,40 +63,27 @@
                 height: 350px;
                 border-radius: 50%;
                 border: none;
-                &:hover {
-                    transition: all 0.1 ease-in-out;
-                    transform: scale(1.2,1.2);
-                    -moz-transform: scale(1.2,1.2);
-                    -webkit-transform: scale(1.2,1.2);
-                    -o-transform: scale(1.2,1.2);
-                    -ms-transform: scale(1.2,1.2);
-                }
-
-                &:hover {
-                    transition: all 0.1 ease-in-out;
-                    background-color: $button-color-hover;
-                    border-radius: 50%;
-
-                    a {
-                        color: $text-color;
-                    }
-                }
+                background-color: rgb(65, 41, 41);
+                    background-image: linear-gradient(to right, rgb(89, 92, 98), rgb(35, 44, 74));
 
                 a {
                     text-decoration: none;
-                    color: #000;
+                    color: rgb(0, 0, 0);
                     font-size: 50px;
                 }
-            }
 
-            &:hover {
-                transition: all 0.1 ease-in-out;
-                background-color: $button-color-hover;
-                border-radius: 50%;
-                color: $button-color;
-
-                a {
-                    color: #000;
+                &:hover {
+                    transition: all 0.1 ease-in-out;
+                    transform: scale(1.2, 1.2);
+                    -moz-transform: scale(1.2, 1.2);
+                    -webkit-transform: scale(1.2, 1.2);
+                    -o-transform: scale(1.2, 1.2);
+                    -ms-transform: scale(1.2, 1.2);
+                    background-color: rgb(106, 102, 106);
+                    background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
+                    a{
+                        color: $text-color;
+                    }
                 }
             }
         }

@@ -1,51 +1,59 @@
-#navbutton{
+#navbutton {
     &:hover {
         transition: all 0.1 ease-in-out;
-        transform: scale(1.1,1.1);
-        -moz-transform: scale(1.1,1.1);
-        -webkit-transform: scale(1.1,1.1);
-        -o-transform: scale(1.1,1.1);
-        -ms-transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
+        -moz-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        -o-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
         color: $text-color;
     }
 }
-.content{
+
+.content {
     position: fixed;
     top: 200px;
     left: 0px;
     right: 100px;
-    &__contaier{
+
+    &__contaier {
         display: flex;
         justify-content: space-around;
-        &__pic{
+
+        &__pic {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            span{
+
+            span {
                 margin: 100 0 100 0;
                 color: $text-color;
             }
-            img{
+
+            img {
                 width: 300px;
                 height: 300px;
+
                 &:hover {
-                transition: all 0.1 ease-in-out;
-                transform: scale(1.25,1.25);
-                -moz-transform: scale(1.25,1.25);
-                -webkit-transform: scale(1.25,1.25);
-                -o-transform: scale(1.25,1.25);
-                -ms-transform: scale(1.25,1.25);
+                    transition: all 0.1 ease-in-out;
+                    transform: scale(1.25, 1.25);
+                    -moz-transform: scale(1.25, 1.25);
+                    -webkit-transform: scale(1.25, 1.25);
+                    -o-transform: scale(1.25, 1.25);
+                    -ms-transform: scale(1.25, 1.25);
                 }
             }
         }
-        &__title{
+
+        &__title {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             margin: 0 0;
-            &__list{
-                &__list1{
+
+            &__list {
+                &__list1 {
                     list-style: none;
                     height: 100%;
                     display: flex;
@@ -55,87 +63,97 @@
                     position: relative;
                     font-weight: 300;
                     color: $text-color;
-                    &__planet{
+
+                    &__planet {
                         width: 70px;
                         height: 40px;
-                       text-decoration: none;
-                       border: 0.5px solid $text-color;
-                       border-radius: 50%;
-                       display: flex;
-                       align-items: center;
-                       justify-content: center;
-                       color: $text-color;
-                       &:hover {
-                        transition: all 0.1 ease-in-out;
-                        background-color: $text-color;
+                        text-decoration: none;
+                        border: 0.5px solid $text-color;
                         border-radius: 50%;
-                        color: $button-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $text-color;
 
-                        #title_listt1 {
-                            color: $button-color;
-                        }
                         &:hover {
                             transition: all 0.1 ease-in-out;
-                            transform: scale(1.25,1.25);
-                            -moz-transform: scale(1.25,1.25);
-                            -webkit-transform: scale(1.25,1.25);
-                            -o-transform: scale(1.25,1.25);
-                            -ms-transform: scale(1.25,1.25);
+                            background-color: $text-color;
+                            border-radius: 50%;
+                            color: $button-color;
+
+                            #title_listt1 {
+                                color: $button-color;
+                            }
+
+                            &:hover {
+                                transition: all 0.1 ease-in-out;
+                                transform: scale(1.25, 1.25);
+                                -moz-transform: scale(1.25, 1.25);
+                                -webkit-transform: scale(1.25, 1.25);
+                                -o-transform: scale(1.25, 1.25);
+                                -ms-transform: scale(1.25, 1.25);
+                            }
                         }
-                    }
                     }
                 }
             }
         }
-        &__title{
-            h1{
+
+        &__title {
+            h1 {
                 color: $button-color;
                 font-size: 120px;
                 margin-top: 25px;
                 margin-bottom: 5px;
+
                 // padding-left: 0px;
                 &:hover {
                     transition: all 0.1 ease-in-out;
-                    transform: scale(1.1,1.1);
-                    -moz-transform: scale(1.1,1.1);
-                    -webkit-transform: scale(1.1,1.1);
-                    -o-transform: scale(1.1,1.1);
-                    -ms-transform: scale(1.1,1.1);
+                    transform: scale(1.1, 1.1);
+                    -moz-transform: scale(1.1, 1.1);
+                    -webkit-transform: scale(1.1, 1.1);
+                    -o-transform: scale(1.1, 1.1);
+                    -ms-transform: scale(1.1, 1.1);
                     color: $text-color;
                 }
             }
-            p{
+
+            p {
                 color: $button-color;
+
                 &:hover {
                     transition: all 0.1 ease-in-out;
-                    transform: scale(1.25,1.25);
-                    -moz-transform: scale(1.25,1.25);
-                    -webkit-transform: scale(1.25,1.25);
-                    -o-transform: scale(1.25,1.25);
-                    -ms-transform: scale(1.25,1.25);
+                    transform: scale(1.25, 1.25);
+                    -moz-transform: scale(1.25, 1.25);
+                    -webkit-transform: scale(1.25, 1.25);
+                    -o-transform: scale(1.25, 1.25);
+                    -ms-transform: scale(1.25, 1.25);
                     color: $text-color;
                 }
             }
         }
-        &__info{
-            &__timeNkm{
-                 display: flex;
-                 justify-content: flex-start;
-                 align-items: center;
-                 span{
-                     color: $button-color;
-                     padding-right: 30px;
+
+        &__info {
+            &__timeNkm {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                span {
+                    color: $button-color;
+                    padding-right: 30px;
                     padding-left: 25px;
+
                     &:hover {
                         transition: all 0.1 ease-in-out;
-                        transform: scale(1.25,1.25);
-                        -moz-transform: scale(1.25,1.25);
-                        -webkit-transform: scale(1.25,1.25);
-                        -o-transform: scale(1.25,1.25);
-                        -ms-transform: scale(1.25,1.25);
+                        transform: scale(1.25, 1.25);
+                        -moz-transform: scale(1.25, 1.25);
+                        -webkit-transform: scale(1.25, 1.25);
+                        -o-transform: scale(1.25, 1.25);
+                        -ms-transform: scale(1.25, 1.25);
                         color: $text-color;
                     }
-                 }
+                }
             }
         }
     }

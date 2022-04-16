@@ -36,19 +36,20 @@
                     font-weight: 5;
                     font-size: 32px;
                     border: 1px solid none;
+
                     &:hover {
                         transition: all 0.1 ease-in-out;
-                        transform: scale(1.25,1.25);
-                        -moz-transform: scale(1.25,1.25);
-                        -webkit-transform: scale(1.25,1.25);
-                        -o-transform: scale(1.25,1.25);
-                        -ms-transform: scale(1.25,1.25);
+                        transform: scale(1.25, 1.25);
+                        -moz-transform: scale(1.25, 1.25);
+                        -webkit-transform: scale(1.25, 1.25);
+                        -o-transform: scale(1.25, 1.25);
+                        -ms-transform: scale(1.25, 1.25);
                         color: $text-color;
                         color: $text-color;
                         padding-left: 40px;
                         margin-bottom: 40px;
                         margin-top: 40px;
-                        }
+                    }
                 }
 
                 #title_h2 {
@@ -56,31 +57,33 @@
                     font-weight: 900;
                     font-size: 45px;
                     border: 1px solid none;
+
                     &:hover {
                         transition: all 0.1 ease-in-out;
-                        transform: scale(1.25,1.25);
-                        -moz-transform: scale(1.25,1.25);
-                        -webkit-transform: scale(1.25,1.25);
-                        -o-transform: scale(1.25,1.25);
-                        -ms-transform: scale(1.25,1.25);
-                            color: $text-color;
-                            color: $text-color;
-                            // padding-left: 40px;
-                            margin-bottom: 40px;
-                            margin-top: 40px;
-                        }
+                        transform: scale(1.25, 1.25);
+                        -moz-transform: scale(1.25, 1.25);
+                        -webkit-transform: scale(1.25, 1.25);
+                        -o-transform: scale(1.25, 1.25);
+                        -ms-transform: scale(1.25, 1.25);
+                        color: $text-color;
+                        color: $text-color;
+                        // padding-left: 40px;
+                        margin-bottom: 40px;
+                        margin-top: 40px;
+                    }
                 }
 
                 #title_p {
                     color: $button-color;
                     border: 1px solid none;
+
                     &:hover {
                         transition: all 0.1 ease-in-out;
-                        transform: scale(1.25,1.25);
-                        -moz-transform: scale(1.25,1.25);
-                        -webkit-transform: scale(1.25,1.25);
-                        -o-transform: scale(1.25,1.25);
-                        -ms-transform: scale(1.25,1.25);
+                        transform: scale(1.25, 1.25);
+                        -moz-transform: scale(1.25, 1.25);
+                        -webkit-transform: scale(1.25, 1.25);
+                        -o-transform: scale(1.25, 1.25);
+                        -ms-transform: scale(1.25, 1.25);
                         color: $text-color;
                         padding-left: 40px;
                         margin-bottom: 40px;
@@ -121,16 +124,18 @@
             flex-direction: row-reverse;
             align-items: flex-end;
             justify-content: flex-end;
-            img{
+
+            img {
                 border: 1px solid none;
-                    &:hover {
-                        transition: all 0.1 ease-in-out;
-                        transform: scale(1.2,1.2);
-                        -moz-transform: scale(1.2,1.2);
-                        -webkit-transform: scale(1.2,1.2);
-                        -o-transform: scale(1.2,1.2);
-                        -ms-transform: scale(1.2,1.2);
-                        }
+
+                &:hover {
+                    transition: all 0.1 ease-in-out;
+                    transform: scale(1.2, 1.2);
+                    -moz-transform: scale(1.2, 1.2);
+                    -webkit-transform: scale(1.2, 1.2);
+                    -o-transform: scale(1.2, 1.2);
+                    -ms-transform: scale(1.2, 1.2);
+                }
             }
         }
     }
