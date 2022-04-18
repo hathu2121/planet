@@ -38,7 +38,7 @@
                     border: 1px solid none;
 
                     &:hover {
-                        transition: all 0.1 ease-in-out;
+                        transition: all 1s ease-in-out;
                         transform: scale(1.25, 1.25);
                         -moz-transform: scale(1.25, 1.25);
                         -webkit-transform: scale(1.25, 1.25);
@@ -59,7 +59,7 @@
                     border: 1px solid none;
 
                     &:hover {
-                        transition: all 0.1 ease-in-out;
+                        transition: all 1s ease-in-out;
                         transform: scale(1.25, 1.25);
                         -moz-transform: scale(1.25, 1.25);
                         -webkit-transform: scale(1.25, 1.25);
@@ -78,7 +78,7 @@
                     border: 1px solid none;
 
                     &:hover {
-                        transition: all 0.1 ease-in-out;
+                        transition: all 1s ease-in-out;
                         transform: scale(1.25, 1.25);
                         -moz-transform: scale(1.25, 1.25);
                         -webkit-transform: scale(1.25, 1.25);
@@ -105,7 +105,7 @@
                         margin-left: 25px;
 
                         &:hover {
-                            transition: all 0.1 ease-in-out;
+                            transition: all 0.5s ease-in-out;
                             background-color: $text-color;
                             border-radius: 50%;
                             color: $button-color;
@@ -129,7 +129,7 @@
                 border: 1px solid none;
 
                 &:hover {
-                    transition: all 0.1 ease-in-out;
+                    transition: all 1s ease-in-out;
                     transform: scale(1.2, 1.2);
                     -moz-transform: scale(1.2, 1.2);
                     -webkit-transform: scale(1.2, 1.2);

@@ -81,7 +81,7 @@
 
     #navbutton {
         &:hover {
-            transition: all 0.1 ease-in-out;
+            transition: all 2s ease-in-out;
             transform: scale(1.1, 1.1);
             -moz-transform: scale(1.1, 1.1);
             -webkit-transform: scale(1.1, 1.1);
@@ -99,7 +99,7 @@
 }
 #navbutton {
     &:hover {
-        transition: all 0.1 ease-in-out;
+        transition: all 2s ease-in-out;
         transform: scale(1.1, 1.1);
         -moz-transform: scale(1.1, 1.1);
         -webkit-transform: scale(1.1, 1.1);
@@ -142,7 +142,7 @@
                 margin: 0 0 0 0;
 
                 &:hover {
-                    transition: all 0.1 ease-in-out;
+                    transition: all 2s ease-in-out;
                     transform: scale(1.2, 1.2);
                     -moz-transform: scale(1.2, 1.2);
                     -webkit-transform: scale(1.2, 1.2);
@@ -176,7 +176,7 @@
                 }
 
                 &:hover {
-                    transition: all 0.1 ease-in-out;
+                    transition: all 2s ease-in-out;
                     transform: scale(1.2, 1.2);
                     -moz-transform: scale(1.2, 1.2);
                     -webkit-transform: scale(1.2, 1.2);
