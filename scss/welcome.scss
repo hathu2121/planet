@@ -10,16 +10,16 @@
     }
 }
 .content_welcome {
-    position: fixed;
-    top: 200px;
-    left: 100px;
-    right: 100px;
-    display: flex;
+    background: url(../assets/img/welcome.jpg);
+    width: 100vw;
+    height: 100vh;
+     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
 
     &__title_welcome {
+        margin-top: 220px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -49,12 +49,14 @@
         &__title2 {
             display: flex;
             position: relative;
-            width: 100%;
+            width: 60vw;
 
             &::before {
                 content: " ";
                 z-index: 1;
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 position: absolute;
                 background-color: rgb(68, 66, 66);
                 opacity: 0.5;

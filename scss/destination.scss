@@ -10,15 +10,17 @@
     }
 }
 
-.content {
-    position: fixed;
-    top: 200px;
-    left: 0px;
-    right: 100px;
-
+.content-des {
+    background: url(../assets/img/destination/background-destination-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
     &__contaier {
         display: flex;
         justify-content: space-around;
+        padding-top: 220px;
 
         &__pic {
             display: flex;
@@ -60,7 +62,7 @@
                     display: flex;
                     justify-content: flex-start;
                     padding-right: 0px;
-                    gap: 45px;
+                    gap: 32px;
                     position: relative;
                     font-weight: 300;
                     color: $text-color;
