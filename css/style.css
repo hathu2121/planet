@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: #444242;
+  background-color: #252424;
   opacity: 0.5;
   inset: 0;
   border-radius: 15px;
@@ -73,7 +73,7 @@
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #313030;
+  color: #252525;
   width: 100%;
   text-decoration: none;
 }
@@ -97,7 +97,7 @@
   text-align: center;
   margin-top: 12px;
   margin-bottom: 20px;
-  color: #313030;
+  color: #191818;
 }
 .content_welcome__title_welcome p:hover {
   transition: all 1s ease-in-out;
@@ -112,6 +112,7 @@
 }
 .content_welcome__button_welcome {
   transition: all 0.5s ease-in-out;
+  border: 5px inset none;
 }
 .content_welcome__button_welcome a {
   gap: 10px;
@@ -131,7 +132,7 @@
   color: #000;
 }
 .content_welcome__button_welcome:hover {
-  border: 5px solid none;
+  border: 5px inset none;
   border-radius: 25px;
   transition: all 0.1 ease-in-out;
   transform: scale(1.8, 1.8);
@@ -160,6 +161,69 @@
   color: #F3F4ED;
 }
 
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 130px 0 30px;
+  gap: 25px;
+  position: relative;
+}
+ul::before {
+  content: "";
+  position: absolute;
+  background-color: #444242;
+  opacity: 0.5;
+  inset: 0;
+  border-radius: 15px;
+  background-color: #6a666a;
+  background-image: linear-gradient(to right, #404877, #160505);
+}
+ul .map-home {
+  z-index: 1;
+  padding-left: 20px;
+}
+ul .map-home #numberheder1 {
+  color: #536162;
+}
+ul .map-home a {
+  text-decoration: none;
+}
+ul .map-home a span {
+  color: #F3F4ED;
+  font-size: 20px;
+  padding: 0 5px 0 5px;
+}
+ul .map-home a span:first-child {
+  font-weight: bolder;
+}
+ul .map-home a span:last-child {
+  font-weight: lighter;
+}
+ul .map-home:hover a span::before {
+  content: " ";
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  background-color: white;
+  width: 409px;
+  height: 4px;
+  top: 50px;
+  left: 4%;
+}
+
+#navbutton1:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  color: #F3F4ED;
+}
+
 .map {
   position: relative;
   height: 100vh;
@@ -181,6 +245,7 @@
 .map-planet__sun .img1 {
   width: 380px;
   height: 380px;
+  transition: all 2s ease-in-out;
 }
 .map-planet__sun .img2 {
   position: absolute;
@@ -192,25 +257,37 @@
   display: none;
 }
 .map-planet__sun:hover .img1 {
+  transition: all 2s ease-in-out;
+  z-index: 2;
+  transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
   animation-delay: 0.1s;
 }
 .map-planet__sun:hover .img2 {
   width: 380px;
   height: 380px;
   display: block;
+  transition: all 2s ease-in-out;
+  transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
   animation: rotatePlanet 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 }
 .map-planet__sun span {
   display: none;
   opacity: 0;
-  color: #ffbc1f;
+  color: #524d42;
   font-size: 30px;
   font-weight: 900;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-top: 100px;
-  transition: all 2s ease-in-out;
 }
 .map-planet__sun span::before {
   content: " ";
@@ -382,6 +459,7 @@ body body {
   justify-content: space-around;
   align-items: center;
   padding: 0 30px 0 70px;
+  position: relative;
 }
 .header__logo .logo {
   color: #F3F4ED;
@@ -396,6 +474,16 @@ body body {
   text-decoration: none;
   font-size: 40px;
   font-weight: 900px;
+}
+.header::before {
+  content: " ";
+  position: absolute;
+  background-color: white;
+  opacity: 0.5;
+  width: 300px;
+  height: 0.5px;
+  top: 58.5px;
+  left: 23%;
 }
 .header ul {
   list-style: none;
@@ -416,29 +504,38 @@ body body {
   background-color: #6a666a;
   background-image: linear-gradient(to right, #404877, #160505);
 }
-.header ul li {
+.header ul .home {
   z-index: 1;
   padding-left: 20px;
 }
-.header ul li #numberheder {
+.header ul .home #numberheder {
   color: #536162;
 }
-.header ul li a {
+.header ul .home a {
   text-decoration: none;
 }
-.header ul li a span {
+.header ul .home a span {
   color: #F3F4ED;
   font-size: 20px;
   padding: 0 5px 0 5px;
 }
-.header ul li a span:first-child {
+.header ul .home a span:first-child {
   font-weight: bolder;
 }
-.header ul li a span:last-child {
+.header ul .home a span:last-child {
   font-weight: lighter;
 }
+.header ul .home:hover a span::before {
+  content: " ";
+  position: absolute;
+  background-color: white;
+  width: 130px;
+  height: 4px;
+  top: 50px;
+  left: 34%;
+}
 .header #navbutton:hover {
-  transition: all 2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
@@ -551,16 +648,6 @@ body body {
   padding-bottom: 20px;
 }
 
-#navbutton:hover {
-  transition: all 1s ease-in-out;
-  transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -webkit-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  color: #F3F4ED;
-}
-
 .content-des {
   background: url(../assets/img/destination/background-destination-desktop.jpg);
   width: 100vw;
@@ -571,7 +658,7 @@ body body {
 }
 .content-des__contaier {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 220px;
 }
 .content-des__contaier__pic {
@@ -599,7 +686,7 @@ body body {
 .content-des__contaier__title {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0 0;
 }
@@ -689,42 +776,42 @@ body body {
   color: #F3F4ED;
 }
 
-.content {
-  position: fixed;
-  top: 200px;
-  left: 100px;
-  right: 100px;
+.content-crew {
+  background: url(../assets/img/crew/background-crew-desktop.jpg);
+  width: 100vw;
+  height: 100vh;
 }
-.content__infocrew {
+.content-crew__infocrew {
+  padding-top: 230px;
   display: flex;
   justify-content: space-around;
 }
-.content__infocrew__title {
+.content-crew__infocrew__title {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.content__infocrew__title #number__title {
+.content-crew__infocrew__title #number__title {
   padding-top: 10px;
   padding-bottom: 80px;
 }
-.content__infocrew__title #number__title #number {
+.content-crew__infocrew__title #number__title #number {
   margin-left: 0px;
   margin-right: 20px;
   color: #536162;
   font-size: 23px;
 }
-.content__infocrew__title #number__title #number_td {
+.content-crew__infocrew__title #number__title #number_td {
   color: #F3F4ED;
   font-size: 23px;
 }
-.content__infocrew__title #title_h #title_h1 {
+.content-crew__infocrew__title #title_h #title_h1 {
   color: #424642;
   font-weight: 5;
   font-size: 32px;
   border: 1px solid none;
 }
-.content__infocrew__title #title_h #title_h1:hover {
+.content-crew__infocrew__title #title_h #title_h1:hover {
   transition: all 1s ease-in-out;
   transform: scale(1.25, 1.25);
   -moz-transform: scale(1.25, 1.25);
@@ -737,13 +824,13 @@ body body {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-.content__infocrew__title #title_h #title_h2 {
+.content-crew__infocrew__title #title_h #title_h2 {
   color: #536162;
   font-weight: 900;
   font-size: 45px;
   border: 1px solid none;
 }
-.content__infocrew__title #title_h #title_h2:hover {
+.content-crew__infocrew__title #title_h #title_h2:hover {
   transition: all 1s ease-in-out;
   transform: scale(1.25, 1.25);
   -moz-transform: scale(1.25, 1.25);
@@ -755,11 +842,11 @@ body body {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-.content__infocrew__title #title_h #title_p {
+.content-crew__infocrew__title #title_h #title_p {
   color: #536162;
   border: 1px solid none;
 }
-.content__infocrew__title #title_h #title_p:hover {
+.content-crew__infocrew__title #title_h #title_p:hover {
   transition: all 1s ease-in-out;
   transform: scale(1.25, 1.25);
   -moz-transform: scale(1.25, 1.25);
@@ -771,11 +858,11 @@ body body {
   margin-bottom: 40px;
   margin-top: 40px;
 }
-.content__infocrew__title #title_h #title_list {
+.content-crew__infocrew__title #title_h #title_list {
   display: flex;
   flex-direction: row;
 }
-.content__infocrew__title #title_h #title_list #title_listt1 {
+.content-crew__infocrew__title #title_h #title_list #title_listt1 {
   border: 1px solid #536162;
   background-color: #536162;
   width: 13px;
@@ -783,50 +870,44 @@ body body {
   border-radius: 50%;
   margin-left: 25px;
 }
-.content__infocrew__title #title_h #title_list #title_listt1:hover {
+.content-crew__infocrew__title #title_h #title_list #title_listt1:hover {
   transition: all 0.5s ease-in-out;
   background-color: #F3F4ED;
   border-radius: 50%;
   color: #536162;
 }
-.content__infocrew__title #title_h #title_list #title_listt1:hover #title_listt1 {
+.content-crew__infocrew__title #title_h #title_list #title_listt1:hover #title_listt1 {
   color: #536162;
 }
-.content__infocrew__crew {
+.content-crew__infocrew__crew {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
   justify-content: flex-end;
 }
-.content__infocrew__crew img {
+.content-crew__infocrew__crew img {
+  width: 450px;
+  height: 480px;
   border: 1px solid none;
 }
-.content__infocrew__crew img:hover {
+.content-crew__infocrew__crew img:hover {
   transition: all 1s ease-in-out;
-  transform: scale(1.2, 1.2);
-  -moz-transform: scale(1.2, 1.2);
-  -webkit-transform: scale(1.2, 1.2);
-  -o-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-}
-
-#navbutton:hover {
-  transition: all 1s ease-in-out;
-  transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -webkit-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  color: #F3F4ED;
+  transform: scale(1.03, 1.03);
+  -moz-transform: scale(1.03, 1.03);
+  -webkit-transform: scale(1.03, 1.03);
+  -o-transform: scale(1.03, 1.03);
+  -ms-transform: scale(1.03, 1.03);
+  padding-top: 0;
+  padding-left: 0;
 }
 
 .content {
-  position: fixed;
-  top: 200px;
-  left: 100px;
-  right: 0px;
+  background: url(../assets/img/technology/background-technology-desktop.jpg);
+  width: 100vw;
+  height: 100vh;
 }
 .content__technology {
+  padding-top: 180px;
   display: flex;
   justify-content: space-around;
 }

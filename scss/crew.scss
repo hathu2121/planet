@@ -1,10 +1,10 @@
-.content {
-    position: fixed;
-    top: 200px;
-    left: 100px;
-    right: 100px;
+.content-crew {
+    background: url(../assets/img/crew/background-crew-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
 
     &__infocrew {
+        padding-top: 230px;
         display: flex;
         justify-content: space-around;
 
@@ -126,15 +126,19 @@
             justify-content: flex-end;
 
             img {
+                width: 450px;
+                height: 480px;
                 border: 1px solid none;
 
                 &:hover {
                     transition: all 1s ease-in-out;
-                    transform: scale(1.2, 1.2);
-                    -moz-transform: scale(1.2, 1.2);
-                    -webkit-transform: scale(1.2, 1.2);
-                    -o-transform: scale(1.2, 1.2);
-                    -ms-transform: scale(1.2, 1.2);
+                    transform: scale(1.03, 1.03);
+                    -moz-transform: scale(1.03, 1.03);
+                    -webkit-transform: scale(1.03, 1.03);
+                    -o-transform: scale(1.03, 1.03);
+                    -ms-transform: scale(1.03, 1.03);
+                    padding-top: 0;
+                    padding-left: 0;
                 }
             }
         }

@@ -14,6 +14,7 @@
         justify-content: space-around;
         align-items: center;
         padding: 0 30px 0 70px;
+        position: relative;
 
         .logo {
             color: $text-color;
@@ -32,6 +33,16 @@
             }
         }
     }
+    &::before {
+        content: " ";
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.5;
+        width: 300px;
+        height: 0.5px;
+        top: 58.5px;
+        left: 23%;
+    }
 
     ul {
         list-style: none;
@@ -41,6 +52,7 @@
         padding: 0 130px 0 30px;
         gap: 25px;
         position: relative;
+        
 
         &::before {
             content: "";
@@ -53,7 +65,7 @@
             background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
         }
 
-        li {
+        .home {
             z-index: 1;
             padding-left: 20px;
 
@@ -78,12 +90,33 @@
                     font-weight: lighter;
                 }
             }
+
+            &:hover {
+                a {
+                    span {
+                        &::before {
+                            content: " ";
+                            position: absolute;
+                            background-color: rgb(255, 255, 255);
+                            width: 130px;
+                            height: 4px;
+                            top: 50px;
+                            left: 34%;
+                        }
+                    }
+                }
+            }
         }
     }
+    
+
+   
+
+
 
     #navbutton {
         &:hover {
-            transition: all 2s ease-in-out;
+            transition: all 0.5s ease-in-out;
             transform: scale(1.1, 1.1);
             -moz-transform: scale(1.1, 1.1);
             -webkit-transform: scale(1.1, 1.1);
@@ -196,6 +229,7 @@
 
     &__button_section {
         border: 0.5px solid none;
+
         &:hover {
             transition: all 2s ease-in-out;
             transform: scale(1.5, 1.5);
