@@ -252,7 +252,7 @@
         }
     }
 }
-
+// mobile
 @media screen and (max-width: 740px) {
     .header {
         padding: 0 0 0 0;
@@ -401,8 +401,8 @@
                 // height: 80%;
                 button {
                     padding: 0 0;
-                    width: 210px;
-                    height: 210px;
+                    width: 140px;
+                    height: 140px;
                     border-radius: 50%;
                     border: none;
                     background-color: rgb(65, 41, 41);
@@ -438,7 +438,7 @@
         }
     }
 }
-
+// tablet
 @media screen and (min-width: 739px) and (max-width: 1024px) {
     .header {
         padding: 0 0 0 0;

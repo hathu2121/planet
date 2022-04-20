@@ -182,6 +182,7 @@
         }
     }
 }
+// mobile
 @media  screen and (max-width: 740px) {
     .content_welcome{
         &__title_welcome{
@@ -290,6 +291,7 @@
         }
     }
 }
+// tablet
 @media screen and (min-width: 739px) and (max-width: 1024px) {
     .content_welcome{
         &__title_welcome{
