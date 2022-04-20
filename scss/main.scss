@@ -280,11 +280,12 @@
 
         &__nav {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-start;
+            flex-wrap: wrap;
             height: 100%;
             align-items: center;
             padding: 0 0;
-            gap: 5px;
+            gap: 0px;
             position: relative;
 
             &::before {
@@ -311,16 +312,7 @@
 
                     span {
                         color: $text-color;
-                        font-size: 20px;
                         padding: 0 5px 0 5px;
-                    }
-
-                    & span:first-child {
-                        font-weight: bolder;
-                    }
-
-                    & span:last-child {
-                        font-weight: lighter;
                     }
                 }
 
@@ -328,6 +320,7 @@
                     a {
                         span {
                             &::before {
+                                display: none;
                                 content: " ";
                                 position: absolute;
                                 background-color: rgb(255, 255, 255);
@@ -342,13 +335,13 @@
             }
         }
 
-        &__button-mobile {
-            display: flex;
+        // &__button-mobile {
+        //     display: flex;
 
-            ion-icon {
-                color: $text-color;
-            }
-        }
+        //     ion-icon {
+        //         color: $text-color;
+        //     }
+        // }
     }
 
     .title {
@@ -362,6 +355,7 @@
             flex-direction: column;
 
             &-text {
+                display: none;
                 margin-top: 0px;
                 margin-bottom: 20px;
                 display: flex;
@@ -371,7 +365,7 @@
                 height: 79%;
 
                 h4 {
-                    font-size: 24px;
+                    font-size: 16px;
                 }
 
                 h1 {
