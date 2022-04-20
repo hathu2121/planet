@@ -185,9 +185,11 @@
 // mobile
 @media  screen and (max-width: 740px) {
     .content_welcome{
+        height: 100vh;
+        width: 100vw;
         &__title_welcome{
             h1{
-                width: 100vh;
+                width: 100%;
                 font-size: 25px;
                 color: $text-color;
                 &:hover {
@@ -204,7 +206,7 @@
                 }
             }
             &__title2{
-                width: 100vh;
+                width: 100%;
                 a{
                     text-align: center;
                     font-size: 60px;
@@ -224,7 +226,7 @@
                 }
             }
             p{
-                width: 100vh;
+                width: 100%;
                 font-size: 12px;
                 color: $text-color;
                 &:hover {
@@ -296,7 +298,7 @@
     .content_welcome{
         &__title_welcome{
             h1{
-                width: 100vh;
+                width: 100%;
                 font-size: 45px;
                 color: $text-color;
                 &:hover {
@@ -313,7 +315,7 @@
                 }
             }
             &__title2{
-                width: 100vh;
+                width: 100%;
                 a{
                     text-align: center;
                     font-size: 130px;
@@ -334,7 +336,7 @@
                 }
             }
             p{
-                width: 100vh;
+                width: 100%;
                 font-size: 22px;
                 color: $text-color;
                 &:hover {
