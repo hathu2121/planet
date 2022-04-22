@@ -15,47 +15,31 @@
 </head>
 
 <body>
+    <!-- background -->
+    <img class="bg" src="./assets/img/home/background-home-desktop.jpg" alt="">
     <!-- header -->
     <header class="header">
         <div class="header__logo">
             <ion-icon class="logo" name="planet-outline"></ion-icon>
             <span class="name">
-                <a class="name" href="./main.html">PLANET</a>
+                <a class="name" href="./main.html">NASA</a>
             </span>
         </div>
-        <div class="header__nav">
-            <div class="header__nav__home" id="navbutton">
-                <a href="./main.html"><span id="numberheder">00</span> <span id="titlerheder">HOME</span></a>
-                <span class="folow"></span>
-            </div>
-            <div class="header__nav__home" id="navbutton">
-                <a href="./destination.html"><span id="numberheder">01</span> <span id="titlerheder">DESTINATION</span></a>
-            </div>
-            <div class="header__nav__home" id="navbutton">
-                <a href="./crew.html"><span id="numberheder">02</span> <span id="titlerheder">CREW</span></a>
-            </div>
-            <div class="header__nav__home" id="navbutton">
-                <a href="./technology.html"><span id="numberheder">03</span> <span id="titlerheder">TECHNOLOGY</span></a>
-            </div>
-        </div>
-        <div class="header__button-mobile">
-            <ion-icon class="nav-button-mobile" name="list-outline"></ion-icon>
-        </div>
-        <div class="header__nav2">
-            <div class="header__nav2__home2" id="navbutton2">
+        <ul>
+            <li class="home" id="navbutton">
                 <a href="./main.html"><span id="numberheder">00</span> <span>HOME</span></a>
-                <span class="folow"></span>
-            </div>
-            <div class="header__nav2__home2" id="navbutton2">
+            </li>
+            <li class="destination" id="navbutton">
                 <a href="./destination.html"><span id="numberheder">01</span> <span>DESTINATION</span></a>
-            </div>
-            <div class="header__nav2__home2" id="navbutton2">
+            </li>
+            <li class="crew" id="navbutton">
                 <a href="./crew.html"><span id="numberheder">02</span> <span>CREW</span></a>
-            </div>
-            <div class="header__nav2__home2" id="navbutton2">
+            </li>
+            <li class="technology" id="navbutton">
                 <a href="./technology.html"><span id="numberheder">03</span> <span>TECHNOLOGY</span></a>
-            </div>
-        </div>
+            </li>
+        </ul>
+        <div class="header__mobile"><ion-icon name="menu-outline"></ion-icon></div>
         
     </header>
     <!-- title -->
@@ -74,14 +58,42 @@
                 </button>
             </div>
         </div>
-        <span class="title__button_section">
+        <div class="title__button_section">
             <a href="./index.html">
-                <ion-icon name="rocket-outline"></ion-icon>
+                <ion-icon name="chevron-down-outline"></ion-icon>
             </a>
-        </span>
+        </div>
     </section>
-
-
+    <div class="header__sidebar">
+        <div class="header__sidebar-logo">
+            <div class="header__sidebar-logo-wrap">  
+                <ion-icon size="large"  name="planet-outline"></ion-icon>
+                <span class="header__sidebar-logo-name">
+                    <a  href="./main.html">NASA</a>
+                </span>
+            </div>
+            <div class="header__sidebar-logo-closed">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+          
+        </div>
+        <ul>
+            <li class="home" id="navbutton">
+                <a href="./main.html"><span id="numberheder">00</span> <span>HOME</span></a>
+            </li>
+            <li class="destination" id="navbutton">
+                <a href="./destination.html"><span id="numberheder">01</span> <span>DESTINATION</span></a>
+            </li>
+            <li class="crew" id="navbutton">
+                <a href="./crew.html"><span id="numberheder">02</span> <span>CREW</span></a>
+            </li>
+            <li class="technology" id="navbutton">
+                <a href="./technology.html"><span id="numberheder">03</span> <span>TECHNOLOGY</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="header__overlay"></div>
+    
     <!-- link -->
     <script src="./js/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

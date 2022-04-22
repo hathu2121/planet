@@ -2,9 +2,13 @@
     background: url(../assets/img/technology/background-technology-desktop.jpg);
     width: 100vw;
     height: 100vh;
+    position: relative;
 
     &__technology {
-        padding-top: 180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%,-50%);
         display: flex;
         justify-content: space-around;
 

@@ -7,16 +7,16 @@ ul {
     gap: 25px;
     position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        background-color: rgb(68, 66, 66);
-        opacity: 0.5;
-        inset: 0;
-        border-radius: 15px;
-        background-color: rgb(106, 102, 106);
-        background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: rgb(68, 66, 66);
+    //     opacity: 0.5;
+    //     inset: 0;
+    //     border-radius: 15px;
+    //     background-color: rgb(106, 102, 106);
+    //     background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
+    // }
 
     .map-home {
         z-index: 1;
@@ -348,16 +348,16 @@ ul {
         gap: 25px;
         position: relative;
 
-        &::before {
-            content: "";
-            position: absolute;
-            background-color: rgb(68, 66, 66);
-            opacity: 0.5;
-            inset: 0;
-            border-radius: 15px;
-            background-color: rgb(106, 102, 106);
-            background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     background-color: rgb(68, 66, 66);
+        //     opacity: 0.5;
+        //     inset: 0;
+        //     border-radius: 15px;
+        //     background-color: rgb(106, 102, 106);
+        //     background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
+        // }
 
         .map-home {
             z-index: 1;

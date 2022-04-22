@@ -8,13 +8,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 
     &__logo {
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 0 30px 0 70px;
-        position: relative;
 
         .logo {
             color: $text-color;
@@ -34,21 +34,10 @@
         }
     }
 
-    &::before {
-        content: " ";
-        position: absolute;
-        background-color: rgb(255, 255, 255);
-        opacity: 0.5;
-        width: 300px;
-        height: 0.5px;
-        top: 58.5px;
-        left: 23%;
-    }
-
-    &__nav {
-        display: flex;
-        justify-content: space-evenly;
+    ul {
+        list-style: none;
         height: 100%;
+        display: flex;
         align-items: center;
         padding: 0 130px 0 30px;
         gap: 25px;
@@ -65,7 +54,7 @@
             background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
         }
 
-        &__home {
+        li {
             z-index: 1;
             padding-left: 20px;
 
@@ -90,28 +79,12 @@
                     font-weight: lighter;
                 }
             }
-
-            &:hover {
-                a {
-                    span {
-                        &::before {
-                            content: " ";
-                            position: absolute;
-                            background-color: rgb(255, 255, 255);
-                            width: 100%;
-                            height: 4px;
-                            top: 50px;
-                            left: 14%;
-                        }
-                    }
-                }
-            }
         }
     }
 
     #navbutton {
         &:hover {
-            transition: all 0.5s ease-in-out;
+            transition: all 0.1 ease-in-out;
             transform: scale(1.1, 1.1);
             -moz-transform: scale(1.1, 1.1);
             -webkit-transform: scale(1.1, 1.1);
@@ -121,49 +94,81 @@
         }
     }
 
-    &__nav2 {
+    &__mobile {
         display: none;
     }
 
-    &__button-mobile {
-        display: none;
+    // Media
+    @media (max-width: $mobile-width) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 10px;
+        padding-block: 0px;
+
+        &__logo {
+            padding: 0px;
+        }
+
+        ul {
+            display: none;
+        }
+
+        &__mobile {
+            display: block;
+            border: 1px solid $text-color;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            padding: 5px;
+
+            ion-icon {
+                font-size: 32px;
+                color: $text-color;
+            }
+        }
     }
 }
 
-#navbutton {
-    &:hover {
-        transition: all 2s ease-in-out;
-        transform: scale(1.1, 1.1);
-        -moz-transform: scale(1.1, 1.1);
-        -webkit-transform: scale(1.1, 1.1);
-        -o-transform: scale(1.1, 1.1);
-        -ms-transform: scale(1.1, 1.1);
-        color: $text-color;
-    }
+.bg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
+
+// #navbutton {
+//     &:hover {
+//         transition: all 0.1 ease-in-out;
+//         transform: scale(1.1, 1.1);
+//         -moz-transform: scale(1.1, 1.1);
+//         -webkit-transform: scale(1.1, 1.1);
+//         -o-transform: scale(1.1, 1.1);
+//         -ms-transform: scale(1.1, 1.1);
+//         color: $text-color;
+//     }
+// }
 
 .title {
-
-    background: url(../assets/img/home/background-home-desktop.jpg) no-repeat;
-    background-size: cover;
-    // background-color: brown;
-    height: 100vh;
-    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
 
     &__content {
-        margin-top: 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        
+
+        gap: 100px;
 
         &-text {
-            width: 100%;
+            // width: 800px;
+            // height: 500px;
+
             h4 {
                 font-weight: bold;
                 color: $text-color;
@@ -178,7 +183,7 @@
                 margin: 0 0 0 0;
 
                 &:hover {
-                    transition: all 2s ease-in-out;
+                    transition: all 1s ease-in-out;
                     transform: scale(1.2, 1.2);
                     -moz-transform: scale(1.2, 1.2);
                     -webkit-transform: scale(1.2, 1.2);
@@ -212,7 +217,7 @@
                 }
 
                 &:hover {
-                    transition: all 2s ease-in-out;
+                    transition: all 0.1s ease-in-out;
                     transform: scale(1.2, 1.2);
                     -moz-transform: scale(1.2, 1.2);
                     -webkit-transform: scale(1.2, 1.2);
@@ -235,156 +240,27 @@
     &__button_section {
         border: 0.5px solid none;
 
-        &:hover {
-            transition: all 2s ease-in-out;
-            transform: scale(1.5, 1.5);
-            -moz-transform: scale(1.5, 1.5);
-            -webkit-transform: scale(1.5, 1.5);
-            -o-transform: scale(1.5, 1.5);
-            -ms-transform: scale(1.5, 1.5);
-            padding-left: 30px;
-            padding-bottom: 15px;
-        }
-
         ion-icon {
-            font-size: 30px;
             color: $text-color;
-            padding-bottom: 20px;
         }
     }
-}
-// mobile
-@media screen and (max-width: 740px) {
-    .header {
-        padding: 0 0 0 0;
 
-        &__logo {
-            display: none;
-            padding: 0 0;
-
-            .name {
-                display: none;
-            }
-        }
-
-        &::before {
-            display: none;
-            content: " ";
-            position: absolute;
-            background-color: rgb(255, 255, 255);
-            opacity: 0.5;
-            width: 300px;
-            height: 0.5px;
-            top: 58.5px;
-            left: 23%;
-        }
-
-        &__nav {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            height: 100%;
-            align-items: center;
-            padding: 0 0;
-            gap: 0px;
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background-color: rgb(68, 66, 66);
-                opacity: 0.5;
-                inset: 0;
-                border-radius: 15px;
-                background-color: rgb(106, 102, 106);
-                background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
-            }
-
-            &__home {
-                z-index: 1;
-                padding-left: 2px;
-
-                #numberheder {
-                    color: $button-color;
-                }
-
-                a {
-                    text-decoration: none;
-
-                    span {
-                        color: $text-color;
-                        padding: 0 5px 0 5px;
-                    }
-                }
-
-                &:hover {
-                    a {
-                        span {
-                            &::before {
-                                display: none;
-                                content: " ";
-                                position: absolute;
-                                background-color: rgb(255, 255, 255);
-                                width: 100%;
-                                height: 4px;
-                                top: 50px;
-                                left: 14%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        // &__button-mobile {
-        //     display: flex;
-
-        //     ion-icon {
-        //         color: $text-color;
-        //     }
-        // }
-    }
-
-    .title {
-        background: url(../assets/img/home/background-home-mobile.jpg) no-repeat;
-        background-size: cover;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+    @media (max-width: $mobile-width) {
         &__content {
-            display: flex;
+            gap: 10px;
+            min-width: 310px;
             flex-direction: column;
+            width: 100%;
 
             &-text {
-                display: none;
-                margin-top: 0px;
-                margin-bottom: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 79%;
-
                 h4 {
-                    font-size: 16px;
+                    font-size: 24px;
+                    text-align: center;
                 }
 
                 h1 {
-                    font-size: 70px;
-
-                    &:hover {
-                        transition: all 2s ease-in-out;
-                        transform: scale(1.2, 1.2);
-                        -moz-transform: scale(1.2, 1.2);
-                        -webkit-transform: scale(1.2, 1.2);
-                        -o-transform: scale(1.2, 1.2);
-                        -ms-transform: scale(1.2, 1.2);
-                        padding-left: 0px;
-                        padding-bottom: 0px;
-                    }
-
+                    font-size: 52px;
+                    text-align: center;
                 }
 
                 p {
@@ -394,244 +270,113 @@
             }
 
             &-button {
-
-                // height: 80%;
                 button {
-                    padding: 0 0;
-                    width: 140px;
-                    height: 140px;
-                    border-radius: 50%;
-                    border: none;
-                    background-color: rgb(65, 41, 41);
-                    background-image: linear-gradient(to right, rgb(89, 92, 98), rgb(35, 44, 74));
-                    margin-bottom: 30px;
+                    width: 150px;
+                    height: 150px;
 
                     a {
-                        text-decoration: none;
-                        color: rgb(0, 0, 0);
-                        font-size: 25px;
+                        font-size: 22px;
                     }
+                }
+            }
+        }
 
-                    &:hover {
-                        transition: all 2s ease-in-out;
-                        transform: scale(1.2, 1.2);
-                        -moz-transform: scale(1.2, 1.2);
-                        -webkit-transform: scale(1.2, 1.2);
-                        -o-transform: scale(1.2, 1.2);
-                        -ms-transform: scale(1.2, 1.2);
-                        background-color: rgb(106, 102, 106);
-                        background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
-                        margin-bottom: 30px;
+        &__button_section {
+            padding-block: 10px;
 
-                        a {
-                            color: $text-color;
-                            font-style: oblique;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
+            a {
+                ion-icon {
+                    font-size: 32px;
                 }
             }
         }
     }
 }
-// tablet
-@media screen and (min-width: 739px) and (max-width: 1024px) {
-    .header {
-        padding: 0 0 0 0;
 
-        &__logo {
-            padding: 0 0;
+.header__sidebar {
+    position: absolute;
+    // inset: 0;
+    left: -100%;
+    // top: -100%;
+    transition: all 0.3s linear;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 12;
+    &-logo {
+        $size: 106px;
+        display: flex;
+        justify-content: space-between;
 
-            .name {
-                display: none;
+        ion-icon {
+            font-size: $size;
+            color: white !important;
+            padding-right: 10px;
+        }
+
+        &-name {
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-size: 40px;
+                font-weight: bold;
             }
         }
 
-        &::before {
-            display: none;
-            content: " ";
-            position: absolute;
-            background-color: rgb(255, 255, 255);
-            opacity: 0.5;
-            width: 300px;
-            height: 0.5px;
-            top: 58.5px;
-            left: 23%;
-        }
-
-        &__nav {
+        &-closed {
+            // border: 1px solid $main-color;
             display: flex;
-            justify-content: space-evenly;
-            height: 100%;
             align-items: center;
-            padding: 0 0;
-            gap: 5px;
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                background-color: rgb(68, 66, 66);
-                opacity: 0.5;
-                inset: 0;
-                border-radius: 15px;
-                background-color: rgb(106, 102, 106);
-                background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
-            }
-
-            &__home {
-                z-index: 1;
-                padding-left: 2px;
-
-                #numberheder {
-                    color: $button-color;
-                }
-
-
-                a {
-                    text-decoration: none;
-
-                    span {
-                        color: $text-color;
-                        font-size: 20px;
-                        padding: 0 5px 0 5px;
-                    }
-
-                    & span:first-child {
-                        font-weight: bolder;
-                    }
-
-                    & span:last-child {
-                        font-weight: lighter;
-                    }
-                }
-
-                &:hover {
-                    a {
-                        span {
-                            &::before {
-                                content: " ";
-                                position: absolute;
-                                background-color: rgb(255, 255, 255);
-                                width: 100%;
-                                height: 4px;
-                                top: 50px;
-                                left: 14%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &__button-mobile {
-            display: flex;
+            justify-self: center;
+            padding: 5px 10px;
 
             ion-icon {
+                font-size: 32px;
                 color: $text-color;
             }
         }
     }
 
-    .title {
-        background: url(../assets/img/home/background-home-tablet.jpg);
+    ul {
         display: flex;
+        padding: 0;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 10px 20px;
+        gap: 30px;
+        list-style: none;
 
-        &__content {
-            display: flex;
-            flex-direction: column;
+        li {
+            a {
 
-            &-text {
-                margin-top: 0px;
-                margin-bottom: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 79%;
+                text-decoration: none;
+                color: $text-color;
 
-                h4 {
-                    font-size: 24px;
-                }
-
-                h1 {
-                    font-size: 70px;
-
-                    &:hover {
-                        transition: all 2s ease-in-out;
-                        transform: scale(1.2, 1.2);
-                        -moz-transform: scale(1.2, 1.2);
-                        -webkit-transform: scale(1.2, 1.2);
-                        -o-transform: scale(1.2, 1.2);
-                        -ms-transform: scale(1.2, 1.2);
-                        padding-left: -20px;
-                        padding-bottom: 0px;
-                    }
-                }
-
-                p {
-                    font-size: 12px;
-                    text-align: center;
-                }
-            }
-
-            &-button {
-
-                // height: 80%;
-                button {
-                    padding: 0 0;
-                    width: 210px;
-                    height: 210px;
-                    border-radius: 50%;
-                    border: none;
-                    background-color: rgb(65, 41, 41);
-                    background-image: linear-gradient(to right, rgb(89, 92, 98), rgb(35, 44, 74));
-                    margin-bottom: 30px;
-
-                    a {
-                        text-decoration: none;
-                        color: rgb(0, 0, 0);
-                        font-size: 25px;
-                    }
-
-                    &:hover {
-                        transition: all 2s ease-in-out;
-                        transform: scale(1.2, 1.2);
-                        -moz-transform: scale(1.2, 1.2);
-                        -webkit-transform: scale(1.2, 1.2);
-                        -o-transform: scale(1.2, 1.2);
-                        -ms-transform: scale(1.2, 1.2);
-                        background-color: rgb(106, 102, 106);
-                        background-image: linear-gradient(to right, rgb(64, 72, 119), rgb(22, 5, 5));
-                        margin-bottom: 30px;
-
-                        a {
-                            color: $text-color;
-                            font-style: oblique;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
+                & span:first-of-type {
+                    font-weight: bold;
+                    color: $button-color;
                 }
             }
         }
     }
 }
-@media screen and (max-width:415px) {
-    .header{
-        width: 100%;
-        &__logo{
-            display: flex;
 
-        }
-        &__nav{
-            display: none;
-        }
-        &__button-mobile{
-            display: block;
-        }
-    }
+.header__overlay{
+    position: absolute;
+    // inset: 0;
+    background: #191c27;
+    opacity: 1;
+    filter: blur(1rem);
+    z-index: 11;
+    left: -100%;
+    transition: all 0.3s linear;
+    
 }
+
+.handle__mobile-open {
+    inset: 0;
+}
+// .handle__mobile-overlay--open{
+//     inset: 0;
+// }
